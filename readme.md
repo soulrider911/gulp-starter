@@ -1,6 +1,6 @@
 # Bsammons Gulp Starter 0.1
 
-Bsammons Gulp Starter is just a starter package that contains all the essentials to get a sit up and running fast. Uses Susy and Breakpoint!
+This Gulp Starter is just a starter package that contains all the essentials to get a gulp build system up and running fast. Uses Susy and Breakpoint!
 
 **No Compass or Rube Dependencies :)**
 **Includes Breakpoint and Susy!**
@@ -14,7 +14,15 @@ After cloning the project to your computer run the following command in your ter
 
 ## Start
 
-	gulp
+To start the build system
+	1. gulp
+
+-------------------------------
+
+## Deploy
+
+To deploy a delivery build run:
+	1. gulp build
 
 -------------------------------
 
