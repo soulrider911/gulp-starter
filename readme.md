@@ -15,16 +15,16 @@ After cloning the project to your computer run the following command in your ter
 ## Start
 
 To start the build system
+
 	1. gulp
 
--------------------------------
 
 ## Deploy
 
 To deploy a delivery build run:
+
 	1. gulp build
 
--------------------------------
 
 ## gulpfile.js
 This is the file that contains all of the gulp tasks and the will run with the default "gulp" command.
