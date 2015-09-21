@@ -1,4 +1,4 @@
-# Bsammons Gulp Starter 0.1
+# Gulp Starter 0.1
 
 This Gulp Starter is just a starter package that contains all the essentials to get a gulp build system up and running fast. Uses Susy and Breakpoint!
 
