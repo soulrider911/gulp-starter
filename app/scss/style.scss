@@ -1,0 +1,163 @@
+@import "reset";
+@import "colors";
+@import '../bower_components/susy/sass/_susy';
+@import '../bower_components/compass-breakpoint/stylesheets/_breakpoint';
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+
+//Susy
+$susy: (
+  container: 960px,
+  columns: 12,
+  gutters: 1/4,
+  global-box-sizing: border-box
+);
+@include border-box-sizing;
+
+//establish Breakpoints
+$desktop: 600px;
+
+// ////////////////////////////////////////////
+// Text & General
+// ////////////////////////////////////////////
+h2, h3{
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+h2{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+h3{
+  font-size:1.2rem;
+}
+p{
+    line-height:1.5;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+a{
+  text-decoration: none;
+  color: $flat-peter-river;
+  transition: color .3s linear;
+  &:hover{
+    color: darken($flat-peter-river, 10%);
+  }
+}
+img{
+  max-width: 100%;
+}
+
+// ////////////////////////////////////////////
+// Main Sections
+// ////////////////////////////////////////////
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+}
+.container{
+  @include container;
+}
+
+header.site-header{
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 4px solid $gulp;
+  color: #fff;
+  margin-bottom: 2rem;
+  #logo{
+    color: $gulp;
+    float: left;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  nav{
+    float: right;
+    a{
+      text-decoration: none;
+      color: $gulp;
+      padding: 0 5px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main{
+  @include breakpoint($desktop) {
+    @include span(8);
+  }
+
+  article{
+    border-bottom: 1px solid #ddd;
+    padding: 2rem 0;
+    &:first-child{
+      padding-top:0;
+    }
+    footer{
+      color: #555;
+      font-weight: 300;
+      span{
+        display: block;
+        border-top: 1px dotted $flat-silver;
+        line-height: 2.5;
+      }
+      @include breakpoint($desktop){
+        span{
+          display: inline-block;
+          border: none;
+          border-right: 1px dotted $flat-silver;
+          padding: 0 8px;
+          margin-right: -4px;
+          line-height: 1.5;
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+aside{
+  background-color: $gulp;
+  border-radius: 2px;
+  padding: 20px;
+  @include breakpoint($desktop) {
+    @include span(4 last);
+  }
+
+  .widget{
+    margin-bottom: 1.5rem;
+    h3{
+      color: #fff;
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #fafafa;
+    }
+    ul li a{
+      color: rgba(255,255,255,.5);
+      padding: 4px 0;
+      display: block;
+      &:hover{
+        color: rgba(255,255,255,.8);
+      }
+    }
+    p{
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: rgba(255,255,255,.7);
+    }
+  }
+}
+
+footer.site-footer{
+  clear: both;
+  text-align: center;
+  font-size: .75rem;
+  padding: 10px 0;
+}

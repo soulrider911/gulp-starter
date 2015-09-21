@@ -1,0 +1,22 @@
+{
+  "name": "my-site",
+  "version": "0.0.0",
+  "authors": [
+    "Brady Sammons <soulrider911@gmail.com>"
+  ],
+  "description": "my site created with Gulp",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#~2.0.1",
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "jquery": "~2.1.4",
+    "susy": "~2.2.6"
+  }
+}
